@@ -1,0 +1,13 @@
+<form class="form-group" [formGroup]="blogCreateForm" (ngSubmit)="createBlog()">
+  <div>
+    <input placeholder="Title" type="text"
+           formControlName="title"
+           name="title">
+  </div>
+  <div>
+    <input placeholder="Content"  type="text"
+           formControlName="content"
+           name="content">
+  </div>
+  <button type="submit" >Add a new Blog</button>
+</form>

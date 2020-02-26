@@ -1,0 +1,17 @@
+<div>
+  <h3 >Blog Edit</h3><hr>
+  <form [formGroup]="blogUpdateForm" (ngSubmit)="updateBlog()">
+    <div>
+      <label>Title:
+        <input class="form-control" type="text" formControlName="title">
+      </label>
+    </div>
+    <div>
+      <label>Content:
+        <textarea class="form-control" formControlName="content"></textarea>
+      </label>
+    </div>
+    <button type="submit">Update</button>
+    <button  type="submit" routerLink="/blog">Cancel</button>
+  </form>
+</div>
